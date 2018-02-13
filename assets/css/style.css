@@ -1,0 +1,264 @@
+/* Large general sections */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    overflow: scroll;
+    padding-bottom:35px;
+}
+
+.container {
+    background-color: lightgray;
+    overflow: scroll;
+}
+
+.content{
+    width: 960px;
+    padding: 20px;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+/* begining header */
+
+.header{
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: solid 1px darkgray;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+h1{
+    background: #4aaaa5;
+    width: 165px;
+    padding: 15px;
+    color: white;
+    float: left;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Georgia', Times, Times, serif;
+}
+
+.nav{
+    float: right;
+    background-color: white;
+    padding-top: 18px;
+    position: absolute;
+    left: 710px;
+}
+
+ul{
+    background: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    margin-left: 30px;
+}
+
+a:hover{
+    color: #4aaaa5;
+}
+
+a:active {
+    color: black;
+}
+
+/* begining of Bio box */
+
+h2{
+    background: white;
+    color: #4aaaa5;
+    font-size: 20px;
+    font-family: 'Georgia', Times, Times, serif;
+}
+
+.pic {
+    float: left;
+    padding: 10px;
+}
+
+.about{
+    overflow: auto;
+}
+
+.about-me{
+    background: white;
+    color: black;
+    padding: 10px;
+    box-sizing: content-box;    
+    width: 630px;
+    margin: 0;
+    float: left;
+    font-size: 20px;
+}
+
+/* Connect with me */
+
+.Connect {
+    background: white;
+    text-align: center;
+    color: #4aaaa5;
+    box-sizing: content-box;    
+    width: 240px;
+    height: 100%;  
+    margin: 0;
+    padding: 15px;
+    float: right;
+    font-family: 'Georgia', Times, Times, serif;
+
+  } 
+  
+a {
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    color: white;
+    background: #666666;
+    text-align: center;
+    padding: 15px;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 5px;
+}
+
+/* Form Box */
+
+.form{
+    background: white;
+    color: black;
+    padding: 10px;
+    box-sizing: content-box;    
+    width: 630px;
+    margin: 0;
+    float: left;
+    font-size: 20px;
+}
+
+textarea{
+    width: 605px;
+}
+
+#title{
+    color: gray;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* portfolio page */
+
+.port{
+    background: white;
+    color: black;
+    padding: 10px;
+    box-sizing: content-box;    
+    width: 600px;
+    margin: 0;
+    float: left;
+    font-size: 20px
+}
+.logo-box{
+    float: left;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 260px;
+	height: 135px;
+	margin: 15px;
+	border: 1px solid #4d4d4d;
+}
+
+.bottom-center{
+    background-color: #4aaaa5;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+}
+
+/* media q */
+
+@media screen and (max-width: 980px){
+    .about-me{
+        width: 315px;
+    }
+    .Connect{
+        float: left;
+        margin-left: 30px;
+    }
+    li{
+        float: left;
+    }
+    .logo-box{
+        width: 50%;
+        float: left;
+    }
+    .form{
+        width: 315;
+    }
+}  
+
+@media screen (max-width 768px){
+
+    .connect{
+    width:50% !important;    
+    }
+.   logo-box{
+    width: 50%;
+    float: left;
+    }
+    .connect{
+    width:100% !important;    
+    }
+}
+
+@media screen (max-width 640px) {
+    .header{
+        position: static;
+    }
+    img{
+        float: left;
+    }
+    p{
+        float: left;
+    }
+    logo-box{
+        width: 25%;
+        float: left;
+        }
+    .connect{
+    width:50% !important;    
+    }
+
+   
+}
